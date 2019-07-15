@@ -35,7 +35,9 @@ char* sum(char* a, char* b) {
 
 	free(a);
 	free(b);
-	return rotateStr(sum, strlen(sum));
+	char* rotateSum = rotateStr(sum, strlen(sum));
+	free(sum);
+	return rotateSum;
 }
 
 char* mul(char* a, char* b) {
